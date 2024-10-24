@@ -1,0 +1,39 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+//combine classes before submitting 
+
+.header__search {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__search--box {
+    //try flex grow or set width percentage and justify-content: space-between. also could try gap.
+   height: 1.5625rem;
+   border: .125rem solid $primarySilver;
+   border-radius: .25rem;
+}
+.header__search--icon{
+    height: .875rem;
+    width: .875rem;
+    //increase for tablet & dt
+}
+
+.header__search--text{
+    font-size: .875rem; //same as icon
+}
+
+.header__search--profile {
+   object-fit: cover;
+   height: 2.25rem;
+   width: 2.25rem;
+   border-radius: 50%;
+
+   @include tablet{
+    height: 2.5rem;
+    width: 2.5rem;
+   }
+
+
+}

@@ -1,0 +1,12 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header__upload{
+    margin: $margin-mobile;
+    background-color: $primaryBlue;
+    color: $primaryWhite;
+    height: 1.5625rem; 
+
+
+
+}

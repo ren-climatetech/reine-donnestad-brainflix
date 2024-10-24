@@ -1,9 +1,11 @@
-@use "./variables" as *;
-@use "./mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../partials/_typography.scss" as *;
 
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: "Avenir",sans-serif;
 }
 
 
