@@ -1,0 +1,19 @@
+
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header__logo {
+  background: $primaryWhite;
+  height: 1.5625rem; //25px
+  width: 7.5rem; //120px
+  // border: 1px dotted $primaryBlack;
+  margin: $margin-mobile auto;
+  display: flex;
+
+  justify-content: center;
+
+
+  @include tablet{
+  margin: $margin-tablet auto;
+  }
+}
