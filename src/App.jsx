@@ -4,12 +4,15 @@ import Header from "./components/Header/Header";
 import Search from "./components/Search/Search";
 import UploadButton from "./components/UploadButton/UploadButton";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
+
+import videoData from "./data/video-details.json";
 // import AllVideos from "./components/AllVideos/AllVideos";
 
 function App() {
-  const [countComments, setcountComments] = useState(0);
-  console.log("App component rendered");
+  const [selected, setSelected] = useState(videoData[0]);
+  const videos = videoData.filter((v) => v !== selected);
 
+  console.log("App component rendered");
 
   return (
     <>
@@ -22,22 +25,58 @@ function App() {
       </header>
 
       <section>
-        <VideoPlayer />
+        <VideoPlayer video={selected} />
+        {/* <VideoInfo video={selected} /> */}
+        <Comments comments={selected.comments} />
       </section>
 
-      {/* <main> */}
-        {/* <VideoHeader/>
-      <VideoInfo/>
-      <VideoDescription/>
-      <CommentCounter/>
-      <CommentForm/> */}
-      {/* </main> */}
-      {/* <section>
-      <RenderedComments/> </section> */}
-      {/* <section>
-        <AllVideos />
-      </section> */}
+      <section>
+        <h2>list</h2>
+        <List videos={videos} setSelected={setSelected} poop="123" />
+      </section>
     </>
+  );
+}
+
+function Comments({ comments }) {
+  return (
+    <div className="comments">
+      <h2>Comments</h2>
+      <div className="comments__count">{comments.length} comments</div>
+    </div>
+  );
+}
+
+function List(props) {
+  const { videos, setSelected, poop } = props;
+  console.log(props);
+
+  return (
+    <div>
+      <h4>
+        List length: {videos.length} -- poop:{poop}
+      </h4>
+      <ul>
+        {videos.map((video) => (
+          <VideoTile key={video.id} video={video} setSelected={setSelected} />
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function VideoTile({ video, setSelected }) {
+  return (
+    <li
+      className="tile"
+      onClick={() => {
+        console.log("User clicked on:", video);
+        setSelected(video);
+      }}
+    >
+      {video.title}
+      <img className="tile__image" src={video.image} alt={video.title} />
+    </li>
   );
 }
 

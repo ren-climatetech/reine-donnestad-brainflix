@@ -1,14 +1,12 @@
 import "./VideoPlayer.scss";
-// import videoPlayer from "https://unit-3-project-api-0a5620414506.herokuapp.com/stream";
 
-function VideoPlayer() {
-    return (
-      <div className="video__container">
-       
-          <video src="https://unit-3-project-api-0a5620414506.herokuapp.com/stream?api_key=1"></video> 
+function VideoPlayer({ video }) {
+  return (
+    <div className="video__container">
+      <video poster={video.image} src={video.video + "?api_key=hi"} controls></video>
+      <div>{video.description}</div>
+    </div>
+  );
+}
 
-      </div>
-    );
-  }
-  
-  export default VideoPlayer;
+export default VideoPlayer;
