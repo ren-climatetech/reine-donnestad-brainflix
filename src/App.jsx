@@ -4,9 +4,12 @@ import Header from "./components/Header/Header";
 import Search from "./components/Search/Search";
 import UploadButton from "./components/UploadButton/UploadButton";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
+// import AllVideos from "./components/AllVideos/AllVideos";
 
 function App() {
   const [countComments, setcountComments] = useState(0);
+  console.log("App component rendered");
+
 
   return (
     <>
@@ -22,17 +25,18 @@ function App() {
         <VideoPlayer />
       </section>
 
-      <main>
+      {/* <main> */}
         {/* <VideoHeader/>
       <VideoInfo/>
       <VideoDescription/>
       <CommentCounter/>
       <CommentForm/> */}
-      </main>
+      {/* </main> */}
       {/* <section>
-      <RenderedComments/> </section>
-    <article>
-      <AllVideos/></article> */}
+      <RenderedComments/> </section> */}
+      {/* <section>
+        <AllVideos />
+      </section> */}
     </>
   );
 }
