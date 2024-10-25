@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Search from "./components/Search/Search";
 import UploadButton from "./components/UploadButton/UploadButton";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
+import VideoInfo from "./components/VideoInfo/VideoInfo";
 
 import videoData from "./data/video-details.json";
 // import AllVideos from "./components/AllVideos/AllVideos";
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
       <header>
-        <nav>
+        <nav> 
           <Header />
           <Search />
           <UploadButton />
@@ -26,13 +27,13 @@ function App() {
 
       <section>
         <VideoPlayer video={selected} />
-        {/* <VideoInfo video={selected} /> */}
+        <VideoInfo video={selected} />
         <Comments comments={selected.comments} />
       </section>
 
       <section>
         <h2>list</h2>
-        <List videos={videos} setSelected={setSelected} poop="123" />
+        <List videos={videos} setSelected={setSelected} propname="123" />
       </section>
     </>
   );
@@ -48,13 +49,13 @@ function Comments({ comments }) {
 }
 
 function List(props) {
-  const { videos, setSelected, poop } = props;
+  const { videos, setSelected, propname } = props;
   console.log(props);
 
   return (
     <div>
       <h4>
-        List length: {videos.length} -- poop:{poop}
+        List length: {videos.length} -- propname:{propname}
       </h4>
       <ul>
         {videos.map((video) => (

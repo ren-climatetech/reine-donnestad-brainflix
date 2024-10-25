@@ -1,0 +1,27 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+
+.video__container-info{
+    display: flex;
+    flex-direction: row;
+    border-top: .1rem solid $primarySilver;
+    border-bottom: .1rem solid $primarySilver;
+    margin: 0 $margin-mobile;
+    columns: 2;
+    gap: 30%;
+
+    @include tablet{
+        margin: $margin-tablet;
+    }
+}
+
+.video__channel{
+    font-weight: 600;
+    padding: $padding-mobile;
+}
+
+.video__timestamp, .video__views, .video__likes {
+    color: $primarySilver;
+    padding: $padding-mobile;
+}

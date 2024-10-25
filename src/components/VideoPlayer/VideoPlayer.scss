@@ -4,3 +4,11 @@
 video{
     width: 100%;
 }
+
+.video__container{
+    padding: $padding-mobile;
+
+    @include tablet{
+        padding: $padding-tablet;
+    }
+}
