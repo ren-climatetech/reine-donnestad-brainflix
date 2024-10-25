@@ -3,37 +3,52 @@
 
 //combine classes before submitting 
 
-.header__search {
+.header__search{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    margin: $margin-mobile;
+    gap: 1rem;
+
+    @include tablet {
+        margin: $margin-tablet;
+    }
 }
 
-.header__search--box {
+.header__search-box {
+    display: flex;
+    flex-direction: row;
+    // flex-grow: .5;
     //try flex grow or set width percentage and justify-content: space-between. also could try gap.
-   height: 1.5625rem;
-   border: .125rem solid $primarySilver;
-   border-radius: .25rem;
+    height: 1.5625rem;
+    border: .125rem solid $primarySilver;
+    border-radius: .25rem;
+    width: 100%;
+    vertical-align: middle;
+    
 }
-.header__search--icon{
-    height: .875rem;
+.header__search-icon{
     width: .875rem;
+    margin: .25rem;
     //increase for tablet & dt
 }
 
-.header__search--text{
+.header__search-text{
     font-size: .875rem; //same as icon
+    border: none;
 }
 
-.header__search--profile {
+.header__search-text:focus { 
+    outline: none; 
+} 
+
+.header__search-profile {
    object-fit: cover;
-   height: 2.25rem;
-   width: 2.25rem;
+   height: 1.5625rem;
+   width: 1.5625rem;
    border-radius: 50%;
 
    @include tablet{
     height: 2.5rem;
     width: 2.5rem;
    }
-
-
 }

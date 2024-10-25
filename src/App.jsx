@@ -1,34 +1,38 @@
 import {useState} from 'react'; //this is a called a hook
 import './App.scss';
-import Header from "/components/Header/Header.jsx";
+import Header from "./components/Header/Header";
+import Search from "./components/Search/Search";
+import UploadButton from './components/UploadButton/UploadButton';
 
 
 function App() {
-  const [countComments, setcountComments] = useState(); 
+  const [countComments, setcountComments] = useState(0); 
 
   return (
   <>
-    <header>  
+    <header>
+      <nav>
     <Header/>
     <Search/>
     <UploadButton/>
+    </nav>  
     </header>
 
     <section>
       <video></video>
-    </section>
+    </section> 
 
     <main>
-      <VideoHeader/>
+      {/* <VideoHeader/>
       <VideoInfo/>
       <VideoDescription/>
       <CommentCounter/>
-      <CommentForm/>
+      <CommentForm/> */}
     </main>
-    <section>
+    {/* <section>
       <RenderedComments/> </section>
     <article>
-      <AllVideos/></article>
+      <AllVideos/></article> */}
   </>
   )
 }
