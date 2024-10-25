@@ -5,12 +5,15 @@
     margin: $margin-mobile;
     background-color: $primaryBlue;
     color: $primaryWhite;
-    height: 1.5625rem; 
     border-radius: .25rem;
     font-weight: 600;
     display: flex;
     justify-content: center;  
     align-items: center; 
+    margin: $margin-mobile;
+    @include tablet {
+        margin: $margin-tablet;
+    }
 }
 
 .header__upload-icon {

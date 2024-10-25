@@ -17,9 +17,6 @@
 .header__search-box {
     display: flex;
     flex-direction: row;
-    // flex-grow: .5;
-    //try flex grow or set width percentage and justify-content: space-between. also could try gap.
-    height: 1.5625rem;
     border: .125rem solid $primarySilver;
     border-radius: .25rem;
     width: 100%;
