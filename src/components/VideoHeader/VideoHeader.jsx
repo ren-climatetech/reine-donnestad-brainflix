@@ -3,17 +3,13 @@ import videoData from "../../data/video-details.json"
 import "./VideoHeader.scss"
 
 
-function VideoHeader () {
+function VideoHeader ({ video }) {
     return (
-        <div className="header__video">
+        <div >
             
             {videoData.map(video => (
                 <div key={video.id}>
-                <h2>{video.title}</h2>
-                <p>{video.channel}</p>
-                <p>{video.timestamp}</p>
-                <p>{video.views}</p>
-                <p>{video.likes}</p>
+                <h1 className="video__header-title">{video.title}</h1>
                 </div>
             ))}
            

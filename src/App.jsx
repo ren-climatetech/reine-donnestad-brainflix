@@ -5,6 +5,7 @@ import Search from "./components/Search/Search";
 import UploadButton from "./components/UploadButton/UploadButton";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 import VideoInfo from "./components/VideoInfo/VideoInfo";
+import TotalComments from "./components/TotalComments/TotalComments";
 
 import videoData from "./data/video-details.json";
 // import AllVideos from "./components/AllVideos/AllVideos";
@@ -28,7 +29,8 @@ function App() {
       <section>
         <VideoPlayer video={selected} />
         <VideoInfo video={selected} />
-        <Comments comments={selected.comments} />
+        <TotalComments comments={selected.comments} />
+     
       </section>
 
       <section>
@@ -39,14 +41,6 @@ function App() {
   );
 }
 
-function Comments({ comments }) {
-  return (
-    <div className="comments">
-      <h2>Comments</h2>
-      <div className="comments__count">{comments.length} comments</div>
-    </div>
-  );
-}
 
 function List(props) {
   const { videos, setSelected, propname } = props;
