@@ -4,7 +4,6 @@
 
 * {
     margin: 0;
-    box-sizing: border-box;
     font-family: "Avenir",sans-serif;
 }
 
@@ -15,5 +14,15 @@ h1, h2, h3, p {
     @include tablet{
         padding: $padding-tablet;
     }
+}
+
+h4 {
+    color: $primarySilver;
+    padding: $padding-mobile;
+
+    @include tablet{
+        padding: $padding-tablet;
+    }
+    
 }
 

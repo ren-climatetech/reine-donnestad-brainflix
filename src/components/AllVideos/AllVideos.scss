@@ -1,0 +1,44 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.tile {
+    display: flex;
+    list-style-type: none;
+    padding-bottom: $padding-mobile;
+
+    &__image {
+      height: 100px;
+      border-radius: 10px;
+    }
+  }
+  
+
+.tile__sectionheader{
+    margin: 0 $margin-mobile;
+    border-top: .125rem solid $secondaryMercury;
+    padding: $padding-mobile 0;
+}
+
+
+.tile__container{
+    padding: 0;
+    margin: 0 $margin-mobile;
+    
+}
+.tile__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .25rem 0;
+}
+
+.tile__info-title{
+    padding:0;
+
+}
+
+.tile__info-channel{
+    font-weight: 400;
+    padding-left: 0;
+    padding-bottom: 0;
+}

@@ -2,14 +2,3 @@
 @use "./styles/partials/mixins" as *;
 @use "./styles/partials/variables" as *;
 @use "./styles/partials/typography"; //dont need *
-
-.tile {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  padding: 1rem 0;
-  &__image {
-    height: 100px;
-    border-radius: 10px;
-  }
-}

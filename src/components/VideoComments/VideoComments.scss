@@ -3,13 +3,14 @@
 
 ul{
   padding: $padding-mobile;
+  padding-bottom: 0;
 }
 
 .videocomment_layout {
     display: flex;
     flex-direction: row;
     margin: 0;
-    border-top: 2px solid $secondaryMercury;
+    border-top: .125rem solid $secondaryMercury;
     list-style-type: none;
 }
 

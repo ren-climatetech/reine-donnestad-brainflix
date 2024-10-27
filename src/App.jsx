@@ -8,9 +8,10 @@ import VideoInfo from "./components/VideoInfo/VideoInfo";
 import TotalComments from "./components/TotalComments/TotalComments";
 import CommentForm from "./components/CommentForm/CommentForm";
 import VideoComments from "./components/VideoComments/VideoComments";
+import AllVideos from "./components/AllVideos/AllVideos";
 
 import videoData from "./data/video-details.json";
-// import AllVideos from "./components/AllVideos/AllVideos";
+
 
 function App() {
   const [selected, setSelected] = useState(videoData[0]);
@@ -39,44 +40,11 @@ function App() {
    
 
       <section>
-        <List videos={videos} setSelected={setSelected} propname="123" />
+        <AllVideos videos={videos} setSelected={setSelected} propname="123" />
       </section>
     </>
   );
 }
 
-
-function List(props) {
-  const { videos, setSelected, propname } = props;
-  console.log(props);
-
-  return (
-    <div>
-      <h4>
-        NEXT VIDEOS: {videos.length} -- propname:{propname}
-      </h4>
-      <ul>
-        {videos.map((video) => (
-          <VideoTile key={video.id} video={video} setSelected={setSelected} />
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function VideoTile({ video, setSelected }) {
-  return (
-    <li
-      className="tile"
-      onClick={() => {
-        console.log("User clicked on:", video);
-        setSelected(video);
-      }}
-    >
-      {video.title}
-      <img className="tile__image" src={video.image} alt={video.title} />
-    </li>
-  );
-}
 
 export default App;
