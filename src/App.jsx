@@ -6,6 +6,7 @@ import UploadButton from "./components/UploadButton/UploadButton";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 import VideoInfo from "./components/VideoInfo/VideoInfo";
 import TotalComments from "./components/TotalComments/TotalComments";
+import CommentForm from "./components/CommentForm/CommentForm";
 
 import videoData from "./data/video-details.json";
 // import AllVideos from "./components/AllVideos/AllVideos";
@@ -30,11 +31,12 @@ function App() {
         <VideoPlayer video={selected} />
         <VideoInfo video={selected} />
         <TotalComments comments={selected.comments} />
-     
+        <CommentForm comments={selected.comments}/>
       </section>
 
+   
+
       <section>
-        <h2>list</h2>
         <List videos={videos} setSelected={setSelected} propname="123" />
       </section>
     </>
@@ -49,7 +51,7 @@ function List(props) {
   return (
     <div>
       <h4>
-        List length: {videos.length} -- propname:{propname}
+        NEXT VIDEOS: {videos.length} -- propname:{propname}
       </h4>
       <ul>
         {videos.map((video) => (

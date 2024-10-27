@@ -4,20 +4,19 @@
 .header__upload{
     margin: $margin-mobile;
     background-color: $primaryBlue;
-    color: $primaryWhite;
     border-radius: .25rem;
     font-weight: 600;
     display: flex;
     justify-content: center;  
     align-items: center; 
-    margin: $margin-mobile;
-    @include tablet {
-        margin: $margin-tablet;
-    }
+    padding: 0;
+    // @include tablet {
+    //     margin: $margin-tablet;
+    // }
 }
 
 .header__upload-icon {
-    padding: .25rem;
+    padding: 1rem;
   }
 
 .header__upload-text {

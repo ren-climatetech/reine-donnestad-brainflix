@@ -17,7 +17,7 @@ img{
 
     @include tablet{
         margin: 0 $margin-tablet;
-        // display: table;
+   
     }
 }
 
@@ -31,8 +31,17 @@ img{
     padding: $padding-mobile 0;
 }
 
+.video__timestamp, .video__likes {
+    padding-top: 0;
+}
+
+
 .video__container-orientation {
 display: flex;
-flex-direction: row;
-gap: 1rem;
+flex-direction: column;
+
+    @include tablet{
+        flex-direction: row;
+        gap: 1rem;
+}
 }

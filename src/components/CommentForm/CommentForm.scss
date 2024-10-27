@@ -1,0 +1,68 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.commentform{
+    display: flex;
+    flex-direction: row;
+}
+
+.commentform_profile{
+    object-fit: cover;
+    height: 1.5625rem;
+    width: 1.5625rem;
+    border-radius: 50%;
+    margin: $margin-mobile;
+    margin-right: 0;
+ 
+    @include tablet{
+     height: 2.5rem;
+     width: 2.5rem;
+    }
+}
+
+.commentform_layout{
+    display: flex;
+    flex-direction: column;
+    padding: 0 $padding-mobile;
+    width: 100%;
+}
+
+.commentform__label {
+    padding: 0;
+    color: $primarySilver;
+}
+
+.comment__form-input {
+    margin: $margin-mobile 0;
+    padding: .5rem;
+    background-color: $secondaryAlabaster;
+    color: $primaryBlack;
+    
+}
+
+.comment__form-button{
+    margin-bottom: $margin-mobile;
+    background-color: $primaryBlue;
+    color: $primaryWhite;
+    border-radius: .25rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    justify-content: space-between;
+    border: none;
+    padding: 0;
+    // @include tablet {
+    //     margin: $margin-tablet;
+    // }
+}
+
+.comment__form-icon{
+    padding: 1rem;
+}
+
+.comment__form-text {
+    flex-grow: 1;          
+    text-align: center; 
+    color: $primaryWhite;
+}
