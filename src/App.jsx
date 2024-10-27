@@ -7,6 +7,7 @@ import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 import VideoInfo from "./components/VideoInfo/VideoInfo";
 import TotalComments from "./components/TotalComments/TotalComments";
 import CommentForm from "./components/CommentForm/CommentForm";
+import VideoComments from "./components/VideoComments/VideoComments";
 
 import videoData from "./data/video-details.json";
 // import AllVideos from "./components/AllVideos/AllVideos";
@@ -32,6 +33,7 @@ function App() {
         <VideoInfo video={selected} />
         <TotalComments comments={selected.comments} />
         <CommentForm comments={selected.comments}/>
+        <VideoComments video={selected}/>
       </section>
 
    

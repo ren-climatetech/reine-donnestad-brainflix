@@ -27,12 +27,16 @@ img{
 }
 
 .video__timestamp, .video__views, .video__likes {
-    color: $primarySilver 0 ;
+    color: $primarySilver;
     padding: $padding-mobile 0;
+    align-items: center;
 }
 
 .video__timestamp, .video__likes {
     padding-top: 0;
+    @include tablet{
+    padding: $padding-mobile 0;
+}
 }
 
 

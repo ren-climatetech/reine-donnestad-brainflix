@@ -8,7 +8,7 @@ function VideoInfo({ video }) {
         <div className="video__container-orientation">
           <p className="video__channel">{video.channel}</p>
           <p className="video__timestamp">
-            {new Date(video.comments[0].timestamp).toLocaleDateString()}
+            {new Date(video.timestamp).toLocaleDateString()}
           </p>
         </div>
 

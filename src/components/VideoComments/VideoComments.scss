@@ -1,0 +1,43 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+ul{
+  padding: $padding-mobile;
+}
+
+.videocomment_layout {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    border-top: 2px solid $secondaryMercury;
+    list-style-type: none;
+}
+
+.videocomment__image {
+    border-radius: 50%;
+    background-color: $secondaryMercury;
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: none;
+    margin-top: 1rem;
+  }
+
+  .videocomment__details {
+    flex:1;
+  }
+
+  .videocomment__details-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .videocomment__timestamp{
+    color: $primarySilver;
+    padding-right: 0;
+  }
+
+  .videocomment__details-comment{
+    padding-top: 0;
+    padding-right: 0;
+  }
