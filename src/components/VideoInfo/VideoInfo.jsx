@@ -3,6 +3,8 @@ import "./VideoInfo.scss";
 
 function VideoInfo({ video }) {
   return (
+    <>
+    <h1>{video.title}</h1>
     <div>
       <div className="video__container-info">
         <div className="video__container-orientation">
@@ -25,6 +27,7 @@ function VideoInfo({ video }) {
       </div>
       <p className="video__description">{video.description}</p>
     </div>
+    </>
   );
 }
 

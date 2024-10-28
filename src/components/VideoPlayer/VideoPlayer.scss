@@ -3,4 +3,15 @@
 
 video{
     width: 100%;
+  
 }
+
+.video__container{
+    @include tablet{
+        padding-left: $padding-tablet;
+        padding-right: $padding-tablet;
+
+        background-color: black;
+    }
+}
+

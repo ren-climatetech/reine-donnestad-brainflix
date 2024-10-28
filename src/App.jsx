@@ -30,20 +30,24 @@ function App() {
           </div>
         </nav>
       </header>
+      
 
-      <section>
+    <section>
         <VideoPlayer video={selected} />
+        </section>
+
+<main className="layout__desktop">
+        <section>
         <VideoInfo video={selected} />
         <TotalComments comments={selected.comments} />
         <CommentForm comments={selected.comments}/>
         <VideoComments video={selected}/>
       </section>
 
-   
-
-      <section>
+      <section className="layout__allvideos">
         <AllVideos videos={videos} setSelected={setSelected} propname="123" />
       </section>
+      </main>
     </>
   );
 }

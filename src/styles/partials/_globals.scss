@@ -25,6 +25,10 @@ h3{
     @include tablet{
         padding: $padding-tablet;
         padding-bottom: $padding-mobile;
+
+    @include desktop{
+        padding-top: 0;
+    }
 }
 }
 
