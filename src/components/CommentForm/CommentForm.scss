@@ -43,7 +43,17 @@
     border: .125rem solid $secondaryMercury;
     border-radius: .25rem;
     color: $primaryBlack;
+
+    &--active {
+        border-color: $primaryBlue; 
+      &--filled {
+        border-color: $secondaryMercury; // Optionally, remove border when filled
+      }
     
+      &--error {
+        border-color: red;
+      }
+    }
 }
 
 .comment__form-button{

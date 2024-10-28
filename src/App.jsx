@@ -12,7 +12,6 @@ import AllVideos from "./components/AllVideos/AllVideos";
 
 import videoData from "./data/video-details.json";
 
-
 function App() {
   const [selected, setSelected] = useState(videoData[0]);
   const videos = videoData.filter((v) => v !== selected);
@@ -21,36 +20,34 @@ function App() {
 
   return (
     <>
-      <header >
-        <nav className="header__layout"> 
-          <Header className="header__layout-component"/>
-          <div className="header__layout-component"> 
-          <Search />
-          <UploadButton />
+      <header>
+        <nav className="header__layout">
+          <Header className="header__layout-component" />
+          <div className="header__layout-component">
+            <Search />
+            <UploadButton />
           </div>
         </nav>
       </header>
-      
 
-    <section>
+      <section>
         <VideoPlayer video={selected} />
+      </section>
+
+      <main className="layout__desktop">
+        <section>
+          <VideoInfo video={selected} />
+          <TotalComments comments={selected.comments} />
+          <CommentForm comments={selected.comments} />
+          <VideoComments video={selected} />
         </section>
 
-<main className="layout__desktop">
-        <section>
-        <VideoInfo video={selected} />
-        <TotalComments comments={selected.comments} />
-        <CommentForm comments={selected.comments}/>
-        <VideoComments video={selected}/>
-      </section>
-
-      <section className="layout__allvideos">
-        <AllVideos videos={videos} setSelected={setSelected} propname="123" />
-      </section>
+        <section className="layout__allvideos">
+          <AllVideos videos={videos} setSelected={setSelected} propname="123" />
+        </section>
       </main>
     </>
   );
 }
-
 
 export default App;
