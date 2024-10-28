@@ -2,3 +2,22 @@
 @use "./styles/partials/mixins" as *;
 @use "./styles/partials/variables" as *;
 @use "./styles/partials/typography"; //dont need *
+
+.header__layout{
+    @include tablet{
+
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 16px;
+    justify-content: space-between;
+    }   
+}
+
+.header__layout-component{
+    @include tablet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin: auto;
+}
+}

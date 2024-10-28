@@ -2,11 +2,20 @@
 @use "../../styles/partials/mixins" as *;
 
 .header__logo {
+  display: flex;
   background: $primaryWhite;
   height: 1.5625rem; //25px
   width: 7.5rem; //120px
-  display: flex;
   margin: $margin-mobile auto;
+  align-items: center;
+  justify-content: center;
+  // gap: 4rem;
+  margin-top: $margin-mobile;
+  margin-bottom: 0;
+
+  @include tablet{
+  margin: $margin-tablet;
 
 
+  }
 }

@@ -17,6 +17,7 @@ img{
 
     @include tablet{
         margin: 0 $margin-tablet;
+        border-top: none;
    
     }
 }
@@ -48,4 +49,10 @@ flex-direction: column;
         flex-direction: row;
         gap: 1rem;
 }
+}
+
+.video__description{
+    @include tablet{
+        padding: $padding-mobile $padding-tablet;
+    }
 }

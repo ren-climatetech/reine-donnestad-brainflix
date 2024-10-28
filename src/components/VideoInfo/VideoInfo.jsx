@@ -23,7 +23,7 @@ function VideoInfo({ video }) {
           </p>
         </div>
       </div>
-      <p>{video.description}</p>
+      <p className="video__description">{video.description}</p>
     </div>
   );
 }

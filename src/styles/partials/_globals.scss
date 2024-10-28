@@ -11,9 +11,21 @@ h1, h2, h3, p {
     color: $primaryBlack;
     padding: $padding-mobile;
 
+}
+
+h1{
     @include tablet{
         padding: $padding-tablet;
+        padding-top: $padding-mobile;
+        padding-bottom: 0;
     }
+}
+
+h3{
+    @include tablet{
+        padding: $padding-tablet;
+        padding-bottom: $padding-mobile;
+}
 }
 
 h4 {

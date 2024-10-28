@@ -4,6 +4,12 @@
 ul{
   padding: $padding-mobile;
   padding-bottom: 0;
+
+  @include tablet{
+    padding: $padding-tablet;
+  padding-bottom: 0;
+}
+
 }
 
 .videocomment_layout {

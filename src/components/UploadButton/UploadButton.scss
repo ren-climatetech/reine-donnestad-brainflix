@@ -2,6 +2,15 @@
 @use "../../styles/partials/mixins" as *;
 
 .header__upload{
+    margin: 0;
+    display: flex;
+    @include tablet{
+
+    }
+}
+    
+
+.header__upload-button{
     margin: $margin-mobile;
     background-color: $primaryBlue;
     border-radius: .25rem;
@@ -10,17 +19,35 @@
     justify-content: center;  
     align-items: center; 
     padding: 0;
-    // @include tablet {
-    //     margin: $margin-tablet;
-    // }
+    border: none;
+    width: 100%;
+  
 }
 
 .header__upload-icon {
-    padding: 1rem;
+    padding: 0 $padding-mobile;
+    margin-right: 0;
   }
 
 .header__upload-text {
     flex-grow: 1;          
     text-align: center; 
     color: $primaryWhite;
+    padding: 1rem;
+    margin-right: 2.5rem;
 }
+
+.header__search-profile2 {
+    display: none;
+ 
+    @include tablet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin: $margin-tablet;
+     height: 2.5rem;
+     width: 2.5rem;
+     object-fit: cover;
+     border-radius: 50%;
+    }
+ }

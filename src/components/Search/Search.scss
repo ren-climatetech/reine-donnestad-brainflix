@@ -6,12 +6,11 @@
 .header__search{
     display: flex;
     justify-content: space-between;
-    margin: $margin-mobile;
-    gap: 1rem;
+    // margin: $margin-mobile;
 
-    @include tablet {
-        margin: $margin-tablet;
-    }
+//     @include tablet {
+//         margin: $margin-tablet;
+//     }
 }
 
 .header__search-box {
@@ -21,6 +20,12 @@
     border-radius: .25rem;
     width: 100%;
     vertical-align: middle;
+    padding: $padding-mobile;
+    margin: $margin-mobile;
+    margin-bottom: 0;
+    @include tablet{
+        margin-bottom: $margin-mobile;
+    }
     
 }
 .header__search-icon{
@@ -40,12 +45,20 @@
 
 .header__search-profile {
    object-fit: cover;
-   height: 1.5625rem;
-   width: 1.5625rem;
+   height: 2.5rem;
+   width: 2.5rem;
    border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
    @include tablet{
-    height: 2.5rem;
-    width: 2.5rem;
+    display: none;
    }
+}
+
+.header__search-profileposition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

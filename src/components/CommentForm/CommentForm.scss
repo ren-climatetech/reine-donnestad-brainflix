@@ -17,6 +17,7 @@
     @include tablet{
      height: 2.5rem;
      width: 2.5rem;
+     margin-left: $margin-tablet;
     }
 }
 
@@ -25,6 +26,9 @@
     flex-direction: column;
     padding: 0 $padding-mobile;
     width: 100%;
+    @include tablet{
+        padding: 0 $padding-tablet;
+    }
 }
 
 .commentform__label {

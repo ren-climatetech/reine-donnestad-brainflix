@@ -11,7 +11,7 @@ function Search() {
           <img className="header__search-icon" src={searchIcon} />
           <input className="header__search-text" placeholder="Search" />
         </div>
-        <div>
+        <div className="header__search-profileposition">
           <img className="header__search-profile" src={profileImage} />
         </div>
       </section>

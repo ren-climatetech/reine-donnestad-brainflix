@@ -21,11 +21,13 @@ function App() {
 
   return (
     <>
-      <header>
-        <nav> 
-          <Header />
+      <header >
+        <nav className="header__layout"> 
+          <Header className="header__layout-component"/>
+          <div className="header__layout-component"> 
           <Search />
           <UploadButton />
+          </div>
         </nav>
       </header>
 
