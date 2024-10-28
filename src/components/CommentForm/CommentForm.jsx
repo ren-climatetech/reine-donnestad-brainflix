@@ -19,18 +19,18 @@ function CommentForm({ handleSubmit }) {
   return (
     <>
     <div className="commentform">
-    <img className="commentform_profile" src={profileImage} />
-      <form className="commentform_layout" id="commentForm" autoComplete="on" onSubmit={handleFormSubmit}>
+    <img className="commentform__profile" src={profileImage} />
+      <form className="commentform__layout" id="commentForm" autoComplete="on" onSubmit={handleFormSubmit}>
      
         <label>
         <h3 className="commentform__label">JOIN THE CONVERSATION</h3>
         </label>
-        <textarea className="comment__form-input" placeholder="Add a new comment" id="inputComment"  required >
+        <textarea className="commentform__input" placeholder="Add a new comment" id="inputComment"  required >
 
         </textarea>
-        <button className="comment__form-button" type="submit">
-            <img className="comment__form-icon" src={commentIcon} alt="add_comment_button"/>
-            <p className="comment__form-text">COMMENT</p></button>
+        <button className="commentform__button" type="submit">
+            <img className="commentform__icon" src={commentIcon} alt="add_comment_button"/>
+            <p className="commentform__text">COMMENT</p></button>
       </form>
     </div>
     

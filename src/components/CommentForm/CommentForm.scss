@@ -4,9 +4,9 @@
 .commentform{
     display: flex;
     flex-direction: row;
-}
 
-.commentform_profile{
+
+&__profile{
     object-fit: cover;
     height: 2.25rem;
     width: 2.25rem;
@@ -21,7 +21,7 @@
     }
 }
 
-.commentform_layout{
+&__layout{
     display: flex;
     flex-direction: column;
     padding: 0 $padding-mobile;
@@ -31,12 +31,14 @@
     }
 }
 
-.commentform__label {
+
+&__label {
     padding: 0;
     color: $primarySilver;
 }
 
-.comment__form-input {
+
+&__input {
     margin: $margin-mobile 0;
     padding: .5rem;
     background-color: $secondaryAlabaster;
@@ -56,7 +58,7 @@
     }
 }
 
-.comment__form-button{
+&__button{
     margin-bottom: $margin-mobile;
     background-color: $primaryBlue;
     color: $primaryWhite;
@@ -68,17 +70,17 @@
     justify-content: space-between;
     border: none;
     padding: 0;
-    // @include tablet {
-    //     margin: $margin-tablet;
-    // }
+   
 }
 
-.comment__form-icon{
+
+&__icon{
     padding: 1rem;
 }
 
-.comment__form-text {
+&__text {
     flex-grow: 1;          
     text-align: center; 
     color: $primaryWhite;
+}
 }
