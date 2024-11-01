@@ -3,7 +3,6 @@
 
 video{
     width: 100%;
-  
 }
 
 .video__container{
@@ -12,7 +11,6 @@ video{
     @include tablet{
         padding-left: $padding-tablet;
         padding-right: $padding-tablet;
-
         background-color: black;
     }
     @include desktop{

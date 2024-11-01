@@ -2,59 +2,61 @@
 @use "../../styles/partials/mixins" as *;
 
 .tile {
-    display: flex;
-    list-style-type: none;
-    padding-bottom: $padding-mobile;
 
-    @include desktop{
-        width: 30vw;
-    }
+  list-style-type: none;
+  padding-bottom: $padding-mobile;
 
-    &__image {
-      height: 100px;
-      border-radius: 10px;
-    }
+  @include desktop {
+    width: 30vw;
   }
-  
 
-.tile__sectionheader{
-    margin: 0 $margin-mobile;
-    border-top: .125rem solid $secondaryMercury;
-    padding: $padding-mobile 0;
-
-    @include tablet{
-        margin: 0 $margin-tablet;
-    }
-    
-    @include desktop{
-        border-top: none;
-    }
+  &__image {
+    height: 100px;
+    border-radius: 10px;
+  }
 }
 
+.tile__sectionheader {
+  margin: 0 $margin-mobile;
+  border-top: 0.125rem solid $secondaryMercury;
+  padding: $padding-mobile 0;
 
-.tile__container{
-    padding: 0;
-    margin: 0 $margin-mobile;
+  @include tablet {
+    margin: 0 $margin-tablet;
+  }
 
-    @include tablet{
-        margin: 0 $margin-tablet;
-    }
-    
-}
-.tile__info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: .25rem 0;
+  @include desktop {
+    border-top: none;
+  }
 }
 
-.tile__info-title{
-    padding:0;
+.tile__container {
+  padding: 0;
+  margin: 0 $margin-mobile;
 
+  @include tablet {
+    margin: 0 $margin-tablet;
+  }
+}
+.tile__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.25rem 0;
 }
 
-.tile__info-channel{
-    font-weight: 400;
-    padding-left: 0;
-    padding-bottom: 0;
+.tile__info-title {
+  padding: 0;
+}
+
+.tile__info-channel {
+  font-weight: 400;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.tile__styling {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
 }

@@ -3,6 +3,7 @@
 @use "./styles/partials/variables" as *;
 @use "./styles/partials/typography"; //dont need *
 
+
 .header__layout{
     @include tablet{
 

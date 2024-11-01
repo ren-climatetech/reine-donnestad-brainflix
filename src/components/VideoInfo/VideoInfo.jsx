@@ -1,4 +1,7 @@
 import "./VideoInfo.scss";
+import views from "../../assets/Images/Icons/views.svg"
+import likes from "../../assets/Images/Icons/likes.svg"
+
 
 
 function VideoInfo({ video }) {
@@ -8,7 +11,7 @@ function VideoInfo({ video }) {
     <div>
       <div className="video__container-info">
         <div className="video__container-orientation">
-          <p className="video__channel">{video.channel}</p>
+          <p className="video__channel">By {video.channel}</p>
           <p className="video__timestamp">
             {new Date(video.timestamp).toLocaleDateString()}
           </p>
@@ -16,11 +19,11 @@ function VideoInfo({ video }) {
 
         <div className="video__container-orientation">
           <p className="video__views">
-            <img src="src/assets/Images/Icons/views.svg" />
+            <img src={views} />
             {video.views}
           </p>
           <p className="video__likes">
-            <img src="src/assets/Images/Icons/likes.svg" />
+            <img src={likes} />
             {video.likes}
           </p>
         </div>

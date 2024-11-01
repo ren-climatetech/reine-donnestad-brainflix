@@ -3,42 +3,46 @@
 @use "typography";
 
 * {
-    margin: 0;
-    font-family: "Avenir",sans-serif;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, p {
-    color: $primaryBlack;
-    padding: $padding-mobile;
-
+body {
+  font-family: "Avenir", sans-serif;
 }
 
-h1{
-    @include tablet{
-        padding: $padding-tablet;
-        padding-top: $padding-mobile;
-        padding-bottom: 0;
+h1,
+h2,
+h3,
+p {
+  color: $primaryBlack;
+  padding: $padding-mobile;
+  margin: 0;
+}
+
+h1 {
+  @include tablet {
+    padding: $padding-tablet;
+    padding-top: $padding-mobile;
+    padding-bottom: 0;
+  }
+}
+
+h3 {
+  @include tablet {
+    padding: $padding-tablet;
+    padding-bottom: $padding-mobile;
+
+    @include desktop {
+      padding-top: 0;
     }
-}
-
-h3{
-    @include tablet{
-        padding: $padding-tablet;
-        padding-bottom: $padding-mobile;
-
-    @include desktop{
-        padding-top: 0;
-    }
-}
+  }
 }
 
 h4 {
-    color: $primarySilver;
-    padding: $padding-mobile;
+  color: $primarySilver;
+  padding: $padding-mobile;
 
-    @include tablet{
-        padding: $padding-tablet;
-    }
-    
+  @include tablet {
+    padding: $padding-tablet;
+  }
 }
-

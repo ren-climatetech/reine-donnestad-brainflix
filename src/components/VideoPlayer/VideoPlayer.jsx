@@ -1,12 +1,14 @@
 import "./VideoPlayer.scss";
 
 function VideoPlayer({ video }) {
+
+  console.log(video);
+  
   return (
     <div>
       <video
         className="video__container"
-        poster={video.image}
-        src={video.video + "?api_key=hi"}
+        poster={video?.image}
         controls
       ></video>
     </div>
