@@ -1,0 +1,68 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+form {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.uploadpage {
+  margin: 0;
+  border-top: 0.125rem solid $secondaryMercury;
+  padding: 0;
+}
+
+.uploadpage__header {
+  margin-top: $margin-mobile;
+}
+
+.uploadpage__subheader {
+  color: $primarySilver;
+}
+
+.uploadpage__title,
+.uploadpage__description {
+  box-sizing: border-box;
+  width: 100%;
+  margin: $margin-mobile;
+}
+
+.uploadpage__title-entry,
+.uploadpage__description-entry {
+  display: flex;
+  // box-sizing: border-box;
+  padding: 0.5rem;
+  background-color: $secondaryAlabaster;
+  border: 0.125rem solid $secondaryMercury;
+  border-radius: 0.25rem;
+  color: $primaryBlack;
+  width: 100%;
+}
+
+.uploadpage__button-publish {
+  background-color: $primaryBlue;
+  border-radius: 0.25rem;
+  color: $primaryWhite;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $padding-mobile;
+  border: none;
+  width: 100%;
+  margin: $margin-mobile;
+}
+
+.uploadpage__button-cancel {
+  background-color: $primaryWhite;
+  border-radius: 0.25rem;
+  color: $primaryBlue;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $padding-mobile;
+  border: 2px solid purple;
+  width: 100%;
+  margin: $margin-mobile;
+}

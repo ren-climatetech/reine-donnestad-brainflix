@@ -7,18 +7,44 @@ import { BASE_URL, API_KEY } from "../../../utils.js";
 import UploadVideo from "../../components/UploadVideo/UploadVideo";
 import "./UploadPage.scss";
 
-
 function UploadPage({ videos }) {
-
   return (
     <>
-      <h2>VIDEO THUMBNAIL </h2>
+      <div className="uploadpage">
+        <h1 className="uploadpage__header">Upload Video</h1>
+      </div>
+      <h3 className="uploadpage__subheader">VIDEO THUMBNAIL </h3>
       <UploadVideo />
       {/* get uploadvideo prop from UploadVideo component */}
-      <h2>TITLE YOUR VIDEO</h2>
-      <h2>ADD A VIDEO DESCRIPTION</h2>
-      <button>PUBLISH</button>
-      <button>CANCEL</button>
+
+      <form>
+        <label>
+          <h3 className="uploadpage__subheader">TITLE YOUR VIDEO</h3>
+        </label>
+        <div className="uploadpage__title">
+          <input
+            type="text"
+            className="uploadpage__title-entry"
+            placeholder="Add a title to your video"
+          />
+        </div>
+
+        <label>
+          <h3 className="uploadpage__subheader">ADD A VIDEO DESCRIPTION</h3>
+        </label>
+        <div className="uploadpage__description">
+        <textarea
+          className="uploadpage__description-entry"
+          placeholder="Add a description to your video"
+        />
+        </div>
+        <div>
+          <button className="uploadpage__button-publish">PUBLISH</button>
+        </div>
+        <div>
+          <button className="uploadpage__button-cancel">CANCEL</button>
+        </div>
+      </form>
     </>
   );
 }

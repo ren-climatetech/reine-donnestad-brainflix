@@ -1,53 +1,55 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-.header__upload{
-    margin: 0;
-    display: flex;
-    @include tablet{
-
-    }
+.header__upload {
+  margin: $margin-mobile;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0;
 }
-    
 
-.header__upload-button{
-    margin: $margin-mobile;
-    background-color: $primaryBlue;
-    border-radius: .25rem;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;  
-    align-items: center; 
-    padding: 0;
-    border: none;
-    width: 100%;
-  
+.header__upload-button {
+  background-color: $primaryBlue;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  width: 100%;
+  margin: 0;
 }
 
 .header__upload-icon {
-    padding: 0 $padding-mobile;
-    margin-right: 0;
-  }
+  padding: 0 $padding-mobile;
+  margin-right: 0;
+}
 
 .header__upload-text {
-    flex-grow: 1;          
-    text-align: center; 
-    color: $primaryWhite;
-    padding: 1rem;
-    margin-right: 2.5rem;
+  flex-grow: 1;
+  text-align: center;
+  color: $primaryWhite;
+  padding: 1rem;
+  margin-right: 2.5rem;
 }
 
 .header__search-profile2 {
-    display: none;
- 
-    @include tablet{
+  display: none;
+
+  @include tablet {
     display: flex;
     align-items: center;
     justify-content: center;
-    // margin: $margin-tablet;
-     height: 2.5rem;
-     width: 2.5rem;
-     object-fit: cover;
-     border-radius: 50%;
-    }
- }
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.upload__button-styling {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}

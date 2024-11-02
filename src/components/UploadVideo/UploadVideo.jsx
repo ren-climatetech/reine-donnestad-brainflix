@@ -6,7 +6,7 @@ import thumbnail from "../../assets/Images/Images/Upload-video-preview.jpg";
 function UploadVideo({}) {
   return (
     <>
-      <img src={thumbnail} />
+      <img src={thumbnail} className="uploadvideo__thumbnail" alt="Video Thumbnail"/>
       <img src={upload} />
       <img src={publish} />
     </>

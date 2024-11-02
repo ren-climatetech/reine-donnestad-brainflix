@@ -1,0 +1,14 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.uploadvideo__thumbnail{
+    width: 100%; 
+    padding: 0 $padding-mobile;
+    display: block;
+    box-sizing: border-box;
+
+   @include tablet{
+        padding: 0 $padding-tablet; 
+    }
+
+}
