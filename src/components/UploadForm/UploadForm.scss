@@ -1,0 +1,69 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.uploadpage__form {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.uploadpage__subheader-form {
+  color: $primarySilver;
+  padding-bottom: 0;
+}
+
+.uploadpage__title,
+.uploadpage__description {
+  box-sizing: border-box;
+  width: 100%;
+  margin: $margin-mobile;
+}
+
+.uploadpage__title-entry,
+.uploadpage__description-entry {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  background-color: $secondaryAlabaster;
+  border: 0.125rem solid $secondaryMercury;
+  border-radius: 0.25rem;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: $primaryBlack;
+  width: 100%;
+}
+
+.uploadpage__button-publish {
+  background-color: $primaryBlue;
+  border-radius: 0.25rem;
+  color: $primaryWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   padding: $padding-mobile;
+  border: none;
+  width: 100%;
+  margin: $margin-mobile;
+}
+
+.upload_button-text {
+  flex-grow: 1;
+  text-align: center;
+  color: $primaryWhite;
+  font-weight: 600;
+  padding: 1rem;
+  margin-right: 2.5rem;
+}
+
+.uploadpage__button-cancel {
+  background-color: $primaryWhite;
+  border-radius: 0.25rem;
+  color: $primaryBlue;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $padding-mobile;
+  border: none;
+  //   border: 2px solid purple;
+  width: 100%;
+  margin: $margin-mobile;
+}
