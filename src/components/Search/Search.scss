@@ -6,11 +6,6 @@
 .header__search{
     display: flex;
     justify-content: space-between;
-    // margin: $margin-mobile;
-
-//     @include tablet {
-//         margin: $margin-tablet;
-//     }
 }
 
 .header__search-box {
@@ -20,18 +15,19 @@
     border-radius: .25rem;
     width: 100%;
     vertical-align: middle;
-    padding: $padding-mobile;
+    padding: .6875rem;
     margin: $margin-mobile;
-    margin-bottom: 0;
+   
+    background-color: $secondaryAlabaster;
     @include tablet{
-        margin-bottom: $margin-mobile;
+        margin: 0;
     }
     
 }
 .header__search-icon{
     width: .875rem;
     margin: .25rem;
-    //increase for tablet & dt
+
 }
 
 .header__search-text{

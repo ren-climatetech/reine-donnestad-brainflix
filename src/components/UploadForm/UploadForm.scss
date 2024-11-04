@@ -3,12 +3,21 @@
 
 .uploadpage__form {
   box-sizing: border-box;
-  width: 100%;
+  padding: 0;
+
+  @include tablet{
+    margin-left: $margin-mobile;
+  }
 }
 
 .uploadpage__subheader-form {
   color: $primarySilver;
   padding-bottom: 0;
+
+
+  @include tablet{
+    padding-left: $padding-mobile;
+  }
 }
 
 .uploadpage__title,
@@ -31,17 +40,28 @@
   width: 100%;
 }
 
+  .uploadpage__description-entry{
+
+  @include tablet{
+    margin-bottom: $padding-tablet;
+  }
+}
+
 .uploadpage__button-publish {
   background-color: $primaryBlue;
+    box-sizing: border-box;
   border-radius: 0.25rem;
   color: $primaryWhite;
   display: flex;
   justify-content: center;
   align-items: center;
-  //   padding: $padding-mobile;
   border: none;
   width: 100%;
   margin: $margin-mobile;
+
+  @include tablet{
+    margin-right: 0;
+  }
 }
 
 .upload_button-text {
@@ -66,4 +86,24 @@
   //   border: 2px solid purple;
   width: 100%;
   margin: $margin-mobile;
+}
+
+
+.uploadpage__button{
+  @include tablet{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: $margin-mobile;
+    border-top: 2px solid $secondaryMercury;
+    padding-top: $padding-mobile;
+    
+  }
+}
+
+.uploadpage__button-layout{
+  @include tablet{
+    display: flex;
+    width: 15rem;
+  }
 }

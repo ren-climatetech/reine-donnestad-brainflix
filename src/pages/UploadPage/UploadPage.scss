@@ -11,12 +11,12 @@ form {
   margin: $margin-mobile;
   padding-left: 0;
   margin-left: 0;
-  margin-top: 0;
+
 
   @include tablet {
     margin: $margin-tablet;
     padding: 0 $padding-mobile;
-    margin-left: 0;
+    // margin-left: 0;
   }
 }
 
@@ -28,11 +28,21 @@ form {
   padding: 0;
 }
 
-
 .uploadpage__header {
-  margin-top: $margin-mobile;
+  margin-top: 0 $margin-mobile;
+
+  @include tablet {
+    margin: 0 $margin-tablet;
+    padding: $padding-tablet 0;
+    border-bottom: .125rem solid $secondaryMercury;
+  }
 }
 
 .uploadpage__subheader {
   color: $primarySilver;
+
+  @include tablet {
+    padding-top: $padding-tablet;
+    // border-top: .125rem solid $secondaryMercury;
+  }
 }

@@ -56,14 +56,16 @@ function UploadForm({handleSubmit}){
                 placeholder="Add a description to your video"
               />
             </div>
-            <div>
+            <div className="uploadpage__button">
+            <div className="uploadpage__button-layout">
               <button type="submit" className="uploadpage__button-publish">
                 <img className="upload_button-icon" src={publish} alt="Publish Button"/>{" "}
                 <p type="submit" className="upload_button-text">PUBLISH</p>
               </button>
             </div>
-            <div>
+            <div className="uploadpage__button-layout">
               <button type="reset" className="uploadpage__button-cancel">CANCEL</button>
+            </div>
             </div>
           </form>
       

@@ -10,7 +10,13 @@ body {
   font-family: "Avenir", sans-serif;
 }
 
-h1,
+h1{
+  color: $primaryBlack;
+  padding: $padding-mobile;
+  margin: 0;
+}
+
+
 h2,
 h3,
 p {
