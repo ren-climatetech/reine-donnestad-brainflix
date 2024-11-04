@@ -17,9 +17,10 @@
     vertical-align: middle;
     padding: .6875rem;
     margin: $margin-mobile;
-   
     background-color: $secondaryAlabaster;
+
     @include tablet{
+        width: 15rem;
         margin: 0;
     }
     
@@ -33,6 +34,7 @@
 .header__search-text{
     font-size: .875rem; //same as icon
     border: none;
+    background-color: $secondaryAlabaster;
 }
 
 .header__search-text:focus { 

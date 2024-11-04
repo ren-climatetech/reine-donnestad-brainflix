@@ -1,6 +1,44 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
+form {
+  box-sizing: border-box;
+  padding: $padding-mobile;
+  margin: $margin-mobile;
+  padding-left: 0;
+  margin-left: 0;
+
+
+  @include tablet {
+    margin: $margin-tablet;
+    padding: 0 $padding-mobile;
+    // margin-left: 0;
+  }
+}
+
+.uploadpage__layout{
+
+  @include desktop{
+  display: flex;
+  flex-grow: 1;
+  }
+}
+
+.uploadpage__layout-container{
+
+  @include desktop{
+  width: 50%;
+  }
+}
+
+.uploadpage__subheader {
+  color: $primarySilver;
+
+  @include tablet {
+    padding-top: $padding-tablet;
+  }
+}
+
 .uploadpage__form {
   box-sizing: border-box;
   padding: 0;
@@ -57,10 +95,11 @@
   align-items: center;
   border: none;
   width: 100%;
-  margin: $margin-mobile;
+ 
 
   @include tablet{
-    margin-right: 0;
+    // margin-right: $margin-tablet;
+    width: 15rem;
   }
 }
 
@@ -83,10 +122,13 @@
   align-items: center;
   padding: $padding-mobile;
   border: none;
-  //   border: 2px solid purple;
   width: 100%;
-  margin: $margin-mobile;
+
+  @include tablet{
+  width: 15rem;
 }
+}
+
 
 
 .uploadpage__button{
@@ -102,8 +144,25 @@
 }
 
 .uploadpage__button-layout{
+  margin: $margin-mobile;
+  margin-right: 0;
+
   @include tablet{
     display: flex;
-    width: 15rem;
+    margin: $margin-mobile;
+    // margin: $margin-tablet;
   }
+}
+
+.uploadvideo__thumbnail{
+  width: 100%; 
+  padding: 0 $padding-mobile;
+  display: block;
+  box-sizing: border-box;
+
+ @include tablet{
+      padding: 0 $padding-tablet; 
+      width: 50vw
+  }
+
 }

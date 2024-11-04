@@ -1,5 +1,4 @@
 import React from "react";
-import UploadVideo from "../../components/UploadVideo/UploadVideo";
 import UploadForm from "../../components/UploadForm/UploadForm";
 
 import "./UploadPage.scss";
@@ -15,10 +14,11 @@ function UploadPage({ videos }) {
         <div>
           <h1 className="uploadpage__header">Upload Video</h1>
         </div>
-        <h3 className="uploadpage__subheader">VIDEO THUMBNAIL </h3>
+
+        <div>
+          <UploadForm handleSubmit={handleSubmit} />
+        </div>
       </div>
-      <UploadVideo />
-      <UploadForm handleSubmit={handleSubmit} />
     </>
   );
 }

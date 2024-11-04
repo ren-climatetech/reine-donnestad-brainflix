@@ -5,20 +5,6 @@
   box-sizing: border-box;
 }
 
-form {
-  box-sizing: border-box;
-  padding: $padding-mobile;
-  margin: $margin-mobile;
-  padding-left: 0;
-  margin-left: 0;
-
-
-  @include tablet {
-    margin: $margin-tablet;
-    padding: 0 $padding-mobile;
-    // margin-left: 0;
-  }
-}
 
 .uploadpage {
   width: 100%;
@@ -38,11 +24,5 @@ form {
   }
 }
 
-.uploadpage__subheader {
-  color: $primarySilver;
 
-  @include tablet {
-    padding-top: $padding-tablet;
-    // border-top: .125rem solid $secondaryMercury;
-  }
-}
+
