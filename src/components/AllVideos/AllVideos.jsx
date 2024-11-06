@@ -19,13 +19,7 @@ function AllVideos(props) {
 
 function VideoTile({ video }) {
   return (
-    <li
-      className="tile"
-      onClick={() => {
-        console.log("User clicked on:", video);
-        setSelected(video);
-      }}
-    >
+    <li className="tile">
       <Link className="tile__styling" to={"/video/" + video.id}>
         <img className="tile__image" src={video.image} alt={video.title} />
         <div className="tile__info">
