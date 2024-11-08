@@ -4,9 +4,7 @@ import UploadForm from "../../components/UploadForm/UploadForm";
 import "./UploadPage.scss";
 
 function UploadPage({ videos }) {
-  const handleSubmit = (videoName, videoDescription) => {
-    console.log("Submitted:", videoName, videoDescription);
-  };
+
 
   return (
     <>
@@ -16,7 +14,7 @@ function UploadPage({ videos }) {
         </div>
 
         <div>
-          <UploadForm handleSubmit={handleSubmit} />
+          <UploadForm />
         </div>
       </div>
     </>
