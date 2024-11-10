@@ -8,7 +8,6 @@ form {
   padding-left: 0;
   margin-left: 0;
 
-
   @include tablet {
     margin: $margin-tablet;
     padding: 0 $padding-mobile;
@@ -16,18 +15,16 @@ form {
   }
 }
 
-.uploadpage__layout{
-
-  @include desktop{
-  display: flex;
-  flex-grow: 1;
+.uploadpage__layout {
+  @include desktop {
+    display: flex;
+    flex-grow: 1;
   }
 }
 
-.uploadpage__layout-container{
-
-  @include desktop{
-  width: 50%;
+.uploadpage__layout-container {
+  @include desktop {
+    width: 50%;
   }
 }
 
@@ -43,7 +40,7 @@ form {
   box-sizing: border-box;
   padding: 0;
 
-  @include tablet{
+  @include tablet {
     margin-left: $margin-mobile;
   }
 }
@@ -52,8 +49,7 @@ form {
   color: $primarySilver;
   padding-bottom: 0;
 
-
-  @include tablet{
+  @include tablet {
     padding-left: $padding-mobile;
   }
 }
@@ -63,6 +59,7 @@ form {
   box-sizing: border-box;
   width: 100%;
   margin: $margin-mobile;
+  padding-right: $padding-mobile;
 }
 
 .uploadpage__title-entry,
@@ -78,16 +75,17 @@ form {
   width: 100%;
 }
 
-  .uploadpage__description-entry{
+.uploadpage__description-entry {
+  resize: none;
 
-  @include tablet{
+  @include tablet {
     margin-bottom: $padding-tablet;
   }
 }
 
 .uploadpage__button-publish {
   background-color: $primaryBlue;
-    box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 0.25rem;
   color: $primaryWhite;
   display: flex;
@@ -95,9 +93,8 @@ form {
   align-items: center;
   border: none;
   width: 100%;
- 
 
-  @include tablet{
+  @include tablet {
     // margin-right: $margin-tablet;
     width: 15rem;
   }
@@ -124,45 +121,41 @@ form {
   border: none;
   width: 100%;
 
-  @include tablet{
-  width: 15rem;
+  @include tablet {
+    width: 15rem;
+  }
 }
-}
 
-
-
-.uploadpage__button{
-  @include tablet{
+.uploadpage__button {
+  @include tablet {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
     margin: $margin-mobile;
     border-top: 2px solid $secondaryMercury;
     padding-top: $padding-mobile;
-    
   }
 }
 
-.uploadpage__button-layout{
+.uploadpage__button-layout {
   margin: $margin-mobile;
   margin-right: 0;
 
-  @include tablet{
+  @include tablet {
     display: flex;
     margin: $margin-mobile;
     // margin: $margin-tablet;
   }
 }
 
-.uploadvideo__thumbnail{
-  width: 100%; 
+.uploadvideo__thumbnail {
+  width: 100%;
   padding: 0 $padding-mobile;
   display: block;
   box-sizing: border-box;
 
- @include tablet{
-      padding: 0 $padding-tablet; 
-      width: 50vw
+  @include tablet {
+    padding: 0 $padding-tablet;
+    width: 50vw;
   }
-
 }

@@ -3,9 +3,7 @@ import UploadForm from "../../components/UploadForm/UploadForm";
 
 import "./UploadPage.scss";
 
-function UploadPage({ videos }) {
-
-
+function UploadPage() {
   return (
     <>
       <div className="uploadpage">

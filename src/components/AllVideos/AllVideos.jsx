@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function AllVideos(props) {
   const { videos } = props;
-  console.log(props);
+
 
   return (
     <div>

@@ -29,5 +29,7 @@
 }
 
 .layout__allvideos{
+    @include desktop{
     border-left: 2px solid $secondaryMercury;
+    }
 }

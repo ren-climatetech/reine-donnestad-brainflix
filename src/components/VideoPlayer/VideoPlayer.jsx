@@ -2,7 +2,6 @@ import "./VideoPlayer.scss";
 
 function VideoPlayer({ video }) {
 
-  console.log(video);
   
   return (
     <div>
